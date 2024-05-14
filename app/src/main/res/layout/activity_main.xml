@@ -8,6 +8,15 @@
     tools:context=".MainActivity"
     android:background="#8094FF">
 
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:queryHint="Search Notes"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/notesHeading"
         android:layout_width="wrap_content"
@@ -26,7 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:padding="16dp"/>
+        android:padding="16dp" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addButton"
